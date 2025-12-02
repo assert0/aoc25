@@ -1,0 +1,18 @@
+[package]
+name = "aoc25"
+version = "0.1.0"
+edition = "2021"
+authors = ["assert0 <assert0@github.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+itertools = "0.14.0"
+regex = "1.11.1"
+lazy_static = "1.5.0"
+nalgebra = "0.34.1"
+lstsq = "0.7.0"
+approx = "0.5.1"
+tqdm = "0.8.0"
+rusttype = "0.9.3"
+
