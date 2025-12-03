@@ -1,4 +1,5 @@
 use std::fs;
+use iter_accumulate::IterAccumulate;
 
 pub fn day1(args: &[String]) {
     println!("Day 1");
@@ -22,18 +23,14 @@ pub fn day1(args: &[String]) {
         })
         .collect();
 
-    let mut pointing = 50;
     let part1 = rotations.iter()
-        .map(|r| {
-            pointing += r;
-            pointing
-        })
-        .filter(|p| p % 100 == 0)
+        .accumulate(50, |acc, r| (acc + r) % 100)
+        .filter(|p| *p == 0)
         .count();
     println!("Part 1: {}", part1);
 
     let mut part2 = 0;
-    pointing = 50;
+    let mut pointing = 50;
     for r in rotations {
         for _ in 0..r.abs() {
             if pointing == 0 {
