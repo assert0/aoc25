@@ -41,4 +41,5 @@ pub fn day1(args: &[String]) {
         } 
     }
     println!("Part 2: {}", part2);
+
 }
