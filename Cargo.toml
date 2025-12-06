@@ -18,4 +18,5 @@ rusttype = "0.9.3"
 iter_accumulate = "1.0.1"
 num-traits = "0.2.19"
 iter-first-max = "0.1.2"
+rangetools = "0.1.4"
 
