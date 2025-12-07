@@ -38,7 +38,7 @@ pub fn day6(args: &[String]) {
 pub fn solve(ops: &Vec<&str>, groups: &Vec<Vec<usize>>) -> usize {
     let mut result = 0;
     for (op, g) in zip(ops, groups) {
-        println!("{} {:?}", op, g);
+        // println!("{} {:?}", op, g);
         let r = match *op {
             "+" => g.iter().sum(),
             "*" => g.iter().product(),
